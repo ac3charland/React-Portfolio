@@ -1,5 +1,5 @@
 import React from "react";
-import "../HomeBio/HomeBio.css";
+import "../HomeBio/HomeBio.scss";
 
 const HomeBio = () => (
     <div id="home-bio" className="row-full">

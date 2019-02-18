@@ -1,5 +1,6 @@
 import React from "react";
 import HomeBio from "../components/HomeBio";
+import HomePortfolio from "../components/HomePortfolio";
 
 const Home = () => (
     <div >
@@ -22,6 +23,9 @@ const Home = () => (
         </div>
         <div className="section">
             <HomeBio />
+        </div>
+        <div className="section">
+            <HomePortfolio />
         </div>
     </div>
 )
