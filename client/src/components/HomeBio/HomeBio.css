@@ -1,3 +1,30 @@
 #home-bio {
-    background-color: blue;
+    background-color: #263E41;
+    color: #dddddd;
+}
+
+@media (max-width: 600px) {
+    #home-bio {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 600px) {
+    #home-bio {
+        font-size: 1.548vw;
+    }
+}
+
+@media (min-width: 992px) {
+    #home-bio {
+        font-size: 1.27vw;
+    }
+}
+
+
+.img-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-grow: 1;
 }
