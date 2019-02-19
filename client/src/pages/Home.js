@@ -27,6 +27,13 @@ const Home = () => (
         <div className="section">
             <HomePortfolio />
         </div>
+        <div className="section">
+            <div className="row">
+                <div className="col s12">
+                    <h3>Some stuff</h3>
+                </div>
+            </div>
+        </div>
     </div>
 )
 
