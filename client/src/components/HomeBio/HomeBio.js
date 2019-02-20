@@ -6,6 +6,7 @@ const HomeBio = () => (
         <div className="container">
             <div className="row">
                 <div className="col s12 m6 img-container">
+                    <h1 id="bio-heading">About Alex</h1>
                     <img className="responsive-img" src="images/HeadshotSquare.jpg" alt="Alex Charland Headshot" />
                 </div>
                 <div className="col s12 m6">

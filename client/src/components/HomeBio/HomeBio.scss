@@ -1,6 +1,12 @@
 #home-bio {
     background-color: #263E41;
-    color: #dddddd;
+    color: #eee;
+}
+
+#bio-heading {
+  position: absolute;
+  top: -16px;
+  left: 16px;
 }
 
 @media (max-width: 600px) {
@@ -27,4 +33,5 @@
     align-items: stretch;
     flex-direction: column;
     flex-grow: 1;
+    position: relative;
 }

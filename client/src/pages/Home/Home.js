@@ -1,6 +1,7 @@
 import React from "react";
-import HomeBio from "../components/HomeBio";
-import HomePortfolio from "../components/HomePortfolio";
+import HomeBio from "../../components/HomeBio";
+import HomePortfolio from "../../components/HomePortfolio";
+import "./Home.scss";
 
 const Home = () => (
     <div >
