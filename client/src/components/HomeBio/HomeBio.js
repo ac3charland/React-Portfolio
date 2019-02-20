@@ -2,7 +2,7 @@ import React from "react";
 import "../HomeBio/HomeBio.scss";
 
 const HomeBio = () => (
-    <div id="home-bio" className="row-full">
+    <div id="home-bio" className="dark-section row-full">
         <div className="container">
             <div className="row">
                 <div className="col s12 m6 img-container">

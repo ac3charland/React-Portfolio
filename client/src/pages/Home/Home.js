@@ -1,6 +1,7 @@
 import React from "react";
 import HomeBio from "../../components/HomeBio";
 import HomePortfolio from "../../components/HomePortfolio";
+import HomeTechs from "../../components/HomeTechs";
 import "./Home.scss";
 
 const Home = () => (
@@ -29,11 +30,7 @@ const Home = () => (
             <HomePortfolio />
         </div>
         <div className="section">
-            <div className="row">
-                <div className="col s12">
-                    <h3>Some stuff</h3>
-                </div>
-            </div>
+            <HomeTechs />
         </div>
     </div>
 )
