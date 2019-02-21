@@ -1,0 +1,33 @@
+.portfolio-img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.img-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+.project-title {
+    color: #aaa;
+    position: absolute;
+    top: -16px;
+    left: 16px;
+}
+
+// .card {
+//     display: flex;
+//     flex-flow: column;
+// }
+
+// .expand {
+//     flex: 1;
+// }
+
+// .fixed {
+//     height: 60px;
+// }

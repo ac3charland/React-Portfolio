@@ -9,7 +9,7 @@ body {
   background-color: #f3f3f3;
   padding: 10px;
   max-width: 220px;
-  height: 300px;
+//   height: 350px;
   text-align: left;
   margin: 0 auto;
   &:hover {
@@ -43,24 +43,38 @@ $i: 0;
 .cards-slider {
     position: relative;
     max-width: 25vw;
-    height: 300px;
+    // height: 350px;
     margin: 0 auto;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
     .cards-slider {
         max-width: 45vw;
+        height: 450px;
     }
     .card {
         min-width: 45vw;
+        height: 450px;
+    }
+}
+@media (min-width: 600px) {
+    .cards-slider {
+        max-width: 45vw;
+        height: 400px;
+    }
+    .card {
+        min-width: 45vw;
+        height: 400px;
     }
 }
 @media (min-width: 992px) {
     .cards-slider {
         max-width: 25vw;
+        height: 400px;
     }
     .card {
         min-width: 25vw;
+        height: 400px;
     }
 }
 /* #endregion */

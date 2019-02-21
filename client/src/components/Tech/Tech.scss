@@ -1,10 +1,22 @@
-.tech {
+.tech-normal {
     width: 130px;
     height: 130px;
     object-fit: cover;
 }
 
+.tech-small {
+    object-fit: cover;
+    @media (max-width: 992px) {
+        width: 7vw;
+        height: 7vw;
+    }
+    @media (min-width: 992px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 .tech-wrapper {
     // width: 130px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }

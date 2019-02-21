@@ -15,7 +15,7 @@ const HomeTechs = () => (
             <div className="row center-align">
                 {data.techs.map(tech => (
                     <div className="col s6 m3">
-                        <Tech name={tech.name} url={tech.url} />
+                        <Tech name={tech.name} url={tech.url} size="tech-normal"/>
                     </div>
                 ))}
                 {/* <div className="col s6 m3">
