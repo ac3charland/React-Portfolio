@@ -1,6 +1,5 @@
 .portfolio-img {
     width: 100%;
-    height: 130px;
     object-fit: cover;
 }
 
@@ -12,22 +11,30 @@
     position: relative;
 }
 
-.project-title {
-    color: #aaa;
-    position: absolute;
-    top: -16px;
-    left: 16px;
+.links {
+    position: relative;
+    top: -30px;
 }
 
-// .card {
-//     display: flex;
-//     flex-flow: column;
-// }
+@media (max-width: 600px) {
+    .portfolio-img {
+        height: 35vw;
+    }
+}
+@media (min-width: 600px) {
+    .portfolio-img {
+        height: 17vw;
+    }
+}
+@media (min-width: 992px) {
+    .portfolio-img {
+        height: 11vw;
+    }
+}
 
-// .expand {
-//     flex: 1;
-// }
-
-// .fixed {
-//     height: 60px;
+// .project-title {
+//     color: black;
+//     position: absolute;
+//     top: -16px;
+//     left: 16px;
 // }

@@ -62,7 +62,7 @@ class HomePortfolio extends React.Component {
                                     'transform': `translateX(-${project.index*(100/projects.length)}%)`
                                 }}>
                                     {
-                                        projects.map(project => <PortFolioCard key={project.index} project={project} />)
+                                        projects.map(project => <PortFolioCard key={project.name} project={project} />)
                                     }
                                 </div>
                             </div>

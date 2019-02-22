@@ -10,9 +10,9 @@ const PortfolioCard = ({project}) => {
         <div id={`card-${index}`} className="card">
             <div className="row expand">
                 <div className="col s12 img-container">
-                    <h4 className="project-title">{name}</h4>
+                    <h5 className="project-title">{name}</h5>
                     <img className="portfolio-img" src={img} alt={name + " Image"} />
-                    <p>{description}</p>
+                    <span>{description}</span>
                 </div>
             </div>
             {/* <div className="row">
@@ -20,14 +20,14 @@ const PortfolioCard = ({project}) => {
                     
                 </div>
             </div> */}
-            <div className="row center-align fixed">
+            <div className="row center-align">
                 {technologies.map(tech => (
                     <div className="col s3">
                         <Tech name={techs[tech].name} url={techs[tech].url} size="tech-small"/>
                     </div>
                 ))}
             </div>
-            <div className="row fixed">
+            <div className="row links">
                 <div className='col s6 right-align'>
                     <a href={url} target="_blank" rel="noopener noreferrer"><i className="material-icons">link</i></a>
                     
