@@ -6,8 +6,25 @@ import data from "./data";
 
 class HomeTechs extends React.Component {
 
-    render() {
+    state = {
+        techs: data.techs,
+        selectedTech: "none"
+    };
 
+    techEnter = (id) => {
+        this.setState({
+            selectedTech: id
+        });
+    }
+
+    techLeave = () => {
+        this.setState({
+            selectedTech: "none"
+        });
+    }
+
+    render() {
+        const {techs, selectedTech} = this.state;
         return (
             <div className="dark-section row-full">
                 <div className="container">
@@ -16,36 +33,19 @@ class HomeTechs extends React.Component {
                             <h1>Skills & Technologies</h1>
                         </div>
                     </div>
-                    <div className="row center-align">
-                        {data.techs.map(tech => (
-                            <div key={"tech-" + tech.index} className="col s6 m3">
-                                <Tech index={tech.index} name={tech.name} url={tech.url} size="tech-normal" />
+                    <div className={`row center-align techs-container active-card-${selectedTech}`}>
+                        {techs.map(tech => (
+                            <div key={`tech-${tech.index}`} className="col s6 m3">
+                                <Tech 
+                                    index={tech.index}
+                                    name={tech.name} 
+                                    url={tech.url} 
+                                    size="tech-normal"
+                                    onMouseEnter={() => this.techEnter(tech.index)}
+                                    onMouseLeave={this.techLeave} 
+                                />
                             </div>
                         ))}
-                        {/* <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div>
-                <div className="col s6 m3">
-                    <Tech />
-                </div> */}
                     </div>
                 </div>
             </div>

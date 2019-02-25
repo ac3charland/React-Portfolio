@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./data";
-import PortFolioCard from "../PortfolioCard";
+import PortfolioCard from "../PortfolioCard";
 import "./HomePortfolio.scss";
 
 class HomePortfolio extends React.Component {
@@ -62,7 +62,7 @@ class HomePortfolio extends React.Component {
                                     'transform': `translateX(-${project.index*(100/projects.length)}%)`
                                 }}>
                                     {
-                                        projects.map(project => <PortFolioCard key={project.name} project={project} />)
+                                        projects.map(project => <PortfolioCard key={project.name} project={project} />)
                                     }
                                 </div>
                             </div>
