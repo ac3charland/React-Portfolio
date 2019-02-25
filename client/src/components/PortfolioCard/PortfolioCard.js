@@ -21,11 +21,14 @@ const PortfolioCard = ({project}) => {
                 </div>
             </div> */}
             <div className="row center-align">
-                {technologies.map(tech => (
-                    <div className="col s3">
-                        <Tech name={techs[tech].name} url={techs[tech].url} size="tech-small"/>
-                    </div>
-                ))}
+                {technologies.map(techIndex => { 
+                    const selected = techs.filter(tech => tech.index === techIndex);
+                    return ( 
+                        <div key={"project-tech-" + selected[0].index} className="col s3">
+                            <Tech name={selected[0].name} url={selected[0].url} size="tech-small"/>
+                        </div>
+                    )
+                })}
             </div>
             <div className="row links">
                 <div className='col s6 right-align'>

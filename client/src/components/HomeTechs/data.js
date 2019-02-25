@@ -67,21 +67,21 @@ const data = {
             "name": "MySQL",
             "url": baseURL + "MySQL.png"
         },
-        {
-            "index": 13,
-            "name": "Sequelize",
-            "url": baseURL + "sequelize.png"
-        },
+        // {
+        //     "index": 13,
+        //     "name": "Sequelize",
+        //     "url": baseURL + "sequelize.png"
+        // },
         {
             "index": 14,
             "name": "MongoDB",
             "url": baseURL + "mongodb.png"
         },
-        {
-            "index": 15,
-            "name": "Mongoose",
-            "url": baseURL + "mongoose.png"
-        },
+        // {
+        //     "index": 15,
+        //     "name": "Mongoose",
+        //     "url": baseURL + "mongoose.png"
+        // },
         {
             "index": 16,
             "name": "Heroku",
