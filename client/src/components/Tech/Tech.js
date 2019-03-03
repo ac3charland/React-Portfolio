@@ -10,8 +10,10 @@ const Tech = (props) => (
                 src={props.url}
                 onMouseEnter={props.onMouseEnter}
                 onMouseLeave={props.onMouseLeave} 
-            />
-            {/* <span className="tech-title">{props.name}</span> */}
+            /> 
+        </div>
+        <div className="row">
+            <h5 className="tech-title">{props.name}</h5>
         </div>
     </div>
 )
