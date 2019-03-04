@@ -22,7 +22,7 @@ class HomeLanding extends React.Component {
             el: "#home-landing",
             backgroundColor: 0xffffff,
             color1: 0x263e41,
-            color2: 0x263e41
+            color2: 0x263e41,
         })
     }
 
